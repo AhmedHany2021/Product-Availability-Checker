@@ -27,6 +27,9 @@ if ( ! defined( 'PAC_PLUGIN_TEMPLATE_PATH' ) ) {
     define( 'PAC_PLUGIN_TEMPLATE_PATH', PAC_PLUGIN_PATH . 'templates/' );
 }
 
+if ( ! defined( 'PAC_PLUGIN_VERSION' ) ) {
+    define( 'PAC_PLUGIN_VERSION', '1.0.0' );
+}
 
 // Include Autoloader class
 require_once PAC_PLUGIN_PATH . 'includes/autoloader.php';

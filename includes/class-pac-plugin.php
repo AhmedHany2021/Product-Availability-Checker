@@ -9,5 +9,7 @@ class PAC_Plugin
         if (is_admin()) {
             new Admin(PAC_PLUGIN_TEMPLATE_PATH . 'admin/', 10);
         }
+
+        new Front();
     }
 }
