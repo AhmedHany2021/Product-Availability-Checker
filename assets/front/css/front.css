@@ -1,0 +1,110 @@
+/* ZIP Checker Container */
+.zip-checker {
+    margin: 20px 0;
+    padding: 15px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.zip-checker label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.zip-input {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.zip-input input[type="text"] {
+    flex: 1;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.zip-input button {
+    padding: 8px 20px;
+    background: #0073aa;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.zip-input button:hover:not(:disabled) {
+    background: #005a87;
+}
+
+.zip-input button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Result Display */
+#zip-result {
+    min-height: 30px;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+#zip-result .zip-loading {
+    color: #666;
+    font-style: italic;
+}
+
+#zip-result .zip-available {
+    color: #46b450;
+    font-weight: 600;
+    display: block;
+}
+
+#zip-result .zip-unavailable {
+    color: #dc3232;
+    font-weight: 600;
+    display: block;
+}
+
+#zip-result .zip-error {
+    color: #dc3232;
+    display: block;
+}
+
+#zip-result .zip-message {
+    display: block;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #ddd;
+    color: #666;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+/* Disabled Add to Cart Button */
+.single_add_to_cart_button.disabled,
+.single_add_to_cart_button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+    .zip-input {
+        flex-direction: column;
+    }
+    
+    .zip-input button {
+        width: 100%;
+    }
+}
+
