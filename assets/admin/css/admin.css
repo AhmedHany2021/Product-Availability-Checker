@@ -1,12 +1,68 @@
-#pac_pagination {
-    margin-top: 10px;
-    text-align: center;
+/* Admin notice styles */
+.pac-admin-notice {
+    margin: 15px 0;
 }
 
-#pac_pagination a.pac-page-link {
+/* Add form styles */
+.pac-add-form {
+    margin-bottom: 30px;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.04);
+}
+
+.pac-add-form .form-table {
+    margin-top: 0;
+}
+
+.pac-add-form .submit {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+/* Table styles */
+#pac_zip_table {
+    margin-top: 20px;
+}
+
+#pac_zip_table .column-zip {
+    width: 15%;
+}
+
+#pac_zip_table .column-status {
+    width: 15%;
+}
+
+#pac_zip_table .column-message {
+    width: 45%;
+}
+
+#pac_zip_table .column-actions {
+    width: 25%;
+}
+
+#pac_zip_table .pac-edit-message {
+    width: 100%;
+    min-height: 50px;
+}
+
+#pac_zip_table .pac-edit-status {
+    width: 100%;
+}
+
+/* Pagination styles */
+.pac-pagination {
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.pac-pagination .pac-page-link {
     display: inline-block;
     margin-right: 5px;
-    padding: 4px 10px;
+    padding: 6px 12px;
     text-decoration: none;
     border: 1px solid #ddd;
     border-radius: 3px;
@@ -16,14 +72,52 @@
     transition: background 0.2s, color 0.2s;
 }
 
-#pac_pagination a.pac-page-link:hover {
+.pac-pagination .pac-page-link:hover {
     background: #0073aa;
     color: #fff;
+    border-color: #0073aa;
 }
 
-#pac_pagination a.pac-page-link.current {
+.pac-pagination .pac-page-link.current {
     background: #0073aa;
     color: #fff;
     border-color: #0073aa;
     pointer-events: none;
+    cursor: default;
+}
+
+/* Character counter */
+.char-count {
+    display: block;
+    margin-top: 5px;
+    color: #666;
+    font-size: 12px;
+}
+
+.char-count:before {
+    content: "(";
+}
+
+.char-count:after {
+    content: ")";
+}
+
+/* Button states */
+.pac-save-zip:disabled,
+.pac-delete-zip:disabled,
+#pac_add_zip:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 782px) {
+    #pac_zip_table .column-message {
+        width: 100%;
+    }
+    
+    #pac_zip_table .column-actions {
+        width: 100%;
+        margin-top: 10px;
+    }
 }
