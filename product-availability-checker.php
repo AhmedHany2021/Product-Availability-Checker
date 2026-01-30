@@ -23,6 +23,10 @@ if ( ! defined( 'PAC_PLUGIN_URL' ) ) {
     define( 'PAC_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
 }
 
+if ( ! defined( 'PAC_PLUGIN_TEMPLATE_PATH' ) ) {
+    define( 'PAC_PLUGIN_TEMPLATE_PATH', PAC_PLUGIN_PATH . 'templates/' );
+}
+
 
 // Include Autoloader class
 require_once PAC_PLUGIN_PATH . 'includes/autoloader.php';

@@ -1,0 +1,29 @@
+#pac_pagination {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#pac_pagination a.pac-page-link {
+    display: inline-block;
+    margin-right: 5px;
+    padding: 4px 10px;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    background: #f7f7f7;
+    color: #0073aa;
+    font-weight: 500;
+    transition: background 0.2s, color 0.2s;
+}
+
+#pac_pagination a.pac-page-link:hover {
+    background: #0073aa;
+    color: #fff;
+}
+
+#pac_pagination a.pac-page-link.current {
+    background: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+    pointer-events: none;
+}
